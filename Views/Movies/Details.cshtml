@@ -1,0 +1,23 @@
+@model BlessingMovies.Models.Movie
+
+@{
+    ViewData["Title"] = "Movie Details";
+}
+
+<h1 class="mb-4">Movie Details</h1>
+
+<div class="mb-3">
+    <strong>Title:</strong> @Model.Title
+</div>
+<div class="mb-3">
+    <strong>Genre:</strong> @Model.Genre
+</div>
+<div class="mb-3">
+    <strong>Year:</strong> @Model.Year
+</div>
+<div class="mb-3">
+    <strong>Rating:</strong> @Model.Rating
+</div>
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back</a>

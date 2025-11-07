@@ -29,3 +29,12 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+input, select, textarea {
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+input, select, textarea {
+    padding: 8px !important;
+}
